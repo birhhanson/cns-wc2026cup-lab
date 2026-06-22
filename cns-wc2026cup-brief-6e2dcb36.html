@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日常对照 · 延伸阅读 · 世界杯</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f2f3f5;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
+      color: #2c2f35;
+      padding: 2rem 1rem;
+    }
+
+    .page-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    /* 主角区 —— 一种安静的标题氛围 */
+    .hero {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #dcdde0;
+    }
+
+    .hero-title {
+      font-size: 2.2rem;
+      font-weight: 520;
+      letter-spacing: -0.01em;
+      color: #1e2126;
+      line-height: 1.2;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-title small {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #6c727a;
+      margin-left: 0.5rem;
+    }
+
+    .hero-sub {
+      color: #5a5f68;
+      font-size: 1rem;
+      border-left: 3px solid #b8bcc4;
+      padding-left: 1rem;
+      margin-top: 0.25rem;
+    }
+
+    /* 卡片体系 */
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.02);
+      border: 1px solid #e5e7eb;
+      padding: 1.6rem 2rem;
+      margin-bottom: 1.8rem;
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04), 0 1px 4px rgba(0, 0, 0, 0.02);
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #1f2329;
+      margin-bottom: 1rem;
+      border-bottom: 1px dashed #d2d6db;
+      padding-bottom: 0.4rem;
+    }
+
+    .card h3 {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: #2f353e;
+      margin: 1.2rem 0 0.4rem;
+    }
+
+    .card p {
+      margin-bottom: 0.85rem;
+      color: #3c414a;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* 引用块 */
+    .quote-note {
+      background: #f0f1f4;
+      padding: 0.9rem 1.2rem;
+      border-radius: 10px;
+      margin: 1.2rem 0 0.5rem;
+      border-left: 4px solid #9ba0ab;
+      font-size: 0.95rem;
+      color: #383d46;
+    }
+
+    .quote-note strong {
+      font-weight: 500;
+      color: #20252c;
+    }
+
+    .quote-note a {
+      font-weight: 500;
+    }
+
+    /* 简单列表样式 */
+    .mini-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.6rem 0 0.2rem;
+    }
+
+    .mini-list li {
+      padding: 0.3rem 0 0.3rem 1.2rem;
+      position: relative;
+      color: #3d434d;
+    }
+
+    .mini-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: #8a909b;
+    }
+
+    /* 链接 */
+    a {
+      color: #2b5f8a;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    a:hover {
+      border-bottom-color: #2b5f8a;
+    }
+
+    /* 小分隔 */
+    .hr-soft {
+      border: 0;
+      border-top: 1px solid #e3e5e9;
+      margin: 1.8rem 0 2rem;
+    }
+
+    .faq-item {
+      margin-bottom: 0.75rem;
+    }
+
+    .faq-item .q {
+      font-weight: 500;
+      color: #262b33;
+    }
+
+    .faq-item .a {
+      margin-top: 0.15rem;
+      color: #4a505a;
+      padding-left: 0.5rem;
+      border-left: 2px solid #d7dbe0;
+      padding-left: 0.9rem;
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #7b818c;
+      margin-top: 2.4rem;
+      border-top: 1px solid #dee0e4;
+      padding-top: 1.8rem;
+    }
+
+    /* 响应式 */
+    @media (max-width: 540px) {
+      body {
+        padding: 1.2rem 0.8rem;
+      }
+      .card {
+        padding: 1.2rem 1.2rem;
+      }
+      .hero-title {
+        font-size: 1.7rem;
+      }
+      .hero-title small {
+        display: block;
+        margin-left: 0;
+        margin-top: 0.15rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+
+    <!-- hero 区块：标题 + 导语 -->
+    <div class="hero">
+      <h1 class="hero-title">
+        查询、对照与延伸
+        <small>—— 一份世界杯日常笔记</small>
+      </h1>
+      <div class="hero-sub">
+        不是分析，也不是预报，只是把那些反复出现的线索轻轻整理。
+      </div>
+    </div>
+
+    <!-- 卡片1：从一次查询说起 -->
+    <div class="card">
+      <h2>打开浏览器，输入一个词</h2>
+      <p>某个普通的工作日下午，我在搜索栏里敲下“世界杯”三个字。原本只想确认下一届预选赛的窗口期，结果却被一连串赛程、历史纪录和延伸话题牵住了注意力。那个熟悉的页面——<a href="https://cns-wc2026cup.com">世界杯</a>——我其实打开过许多次，但每次的阅读路径都不一样。</p>
+      <p>有时是从小组赛对阵表开始，有时则先翻看历届金靴名单，再跳到东道主场馆的简介。这种非线性浏览渐渐成了一种习惯：先查一个数据，然后被另一个条目吸引，最后关上浏览器时，脑子里装着的往往是原本没想找的东西。</p>
+      <div class="quote-note">
+        <strong>一点体会：</strong> 查询的乐趣往往不在答案本身，而在那些顺路遇见的、未曾预期的段落。
+      </div>
+    </div>
+
+    <!-- 卡片2：对照与发现 -->
+    <div class="card">
+      <h2>对照：不同年代的数字</h2>
+      <p>如果把近几届的场均进球、观众人数、参赛队伍扩张节奏放在一起，很容易看出一些缓慢但持续的变化。比如1998年法国世界杯还是32队，而2026年的新赛制将扩大到48支——这个数字对赛程密度、小组策略乃至球迷观赛习惯都会有实质影响。在<a href="https://cns-wc2026cup.com">世界杯</a>页面里，这些信息被收纳得清晰，适合逐条对比。</p>
+      <p>我也喜欢看那些不那么“硬”的对照：解说员的语速变化、转播镜头的剪辑风格、甚至吉祥物的设计语言。它们像是时代的签名，不经意却很难伪造。</p>
+      <ul class="mini-list">
+        <li>1990年 vs 2022年 —— 决赛圈球队地理分布</li>
+        <li>单届进球最多球员的统计口径沿革</li>
+        <li>不同大洲主办后的淘汰赛冷门频率</li>
+      </ul>
+      <p>这类对照不需要结论，梳理本身就能带来一种满足感。</p>
+    </div>
+
+    <!-- 卡片3：延伸阅读 —— 那些没写进直播的片段 -->
+    <div class="card">
+      <h2>延伸阅读：从赛程表到故事线</h2>
+      <p>世界杯从来不只关于那一个月。预选赛里的长途飞行、球员在国家队与俱乐部之间的角色切换、每届赛事前后主办城市的基础设施变化——这些“周边”内容往往比正赛更具叙述张力。在<a href="https://cns-wc2026cup.com">世界杯</a>的信息结构里，这类延伸条目被组织得有条理，适合从一条线索跳转到另一条。</p>
+      <p>比如某一届的用球技术革新，会连着裁判判罚尺度的讨论；再比如某支球队的晋级路线，会牵扯出青训体系的对比。阅读变成了一种编织，把碎片织成一张自己能理解的网。</p>
+      <div class="quote-note">
+        <strong>阅读习惯提醒：</strong> 不必贪多。花十五分钟读完一小段延展内容，往往比刷两个小时标题更有收获。
+      </div>
+    </div>
+
+    <!-- 卡片4：FAQ摘要 —— 日常遇到的小问题 -->
+    <div class="card">
+      <h2>FAQ 摘要 · 边看边记</h2>
+      <div class="faq-item">
+        <div class="q">Q：2026世界杯的举办城市分布在几个国家？</div>
+        <div class="a">加拿大、墨西哥、美国，共16个主办城市。这是首次由三个国家联合承办。</div>
+      </div>
+      <div class="faq-item">
+        <div class="q">Q：历史上世界杯决赛圈出现过几次点球大战决胜？</div>
+        <div class="a">截至2022年，共5次（1982、1994、2006、2014、2022）。这个数字在48队赛制下可能会变化。</div>
+      </div>
+      <div class="faq-item">
+        <div class="q">Q：“世界杯”这个页面适合做什么类型的查询？</div>
+        <div class="a">基础数据、历史沿革、赛制说明、以及跨届对比。日常查询或延伸阅读都顺手。</div>
+      </div>
+      <p style="margin-top: 0.8rem;">这些零星问题大多来自和朋友聊天时的随口一问，记下来，再统一搜索。用<a href="https://cns-wc2026cup.com">世界杯</a>作为起点，效率不低。</p>
+    </div>
+
+    <!-- 最后的引用与访问句 -->
+    <div class="card" style="background: #f8f9fb;">
+      <p style="font-style: italic; color: #424851;">“足球是简单的游戏，但围绕它的信息网络却可以很复杂。在一个可靠的页面上慢慢对照，比匆忙收集一百个链接更让人踏实。”</p>
+      <div style="margin-top: 1rem; font-size: 0.95rem; color: #525963;">
+        如果你也想从一次日常查询开始，随时可以打开
+        <a href="https://cns-wc2026cup.com">世界杯</a> —— 
+        然后顺着自己的好奇心，一页一页走下去。
+      </div>
+    </div>
+
+    <div class="footer-note">
+      世界杯 · 日常查询与延伸阅读 · 持续更新
+    </div>
+
+  </div>
+</body>
+</html>
